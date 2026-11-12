@@ -1,0 +1,48 @@
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: #f6f8fb; color: #1f2937; font-family: Arial, Helvetica, sans-serif; line-height: 1.6; }
+.container { width: min(1080px, calc(100% - 40px)); margin: 0 auto; }
+.site-header { background: #fff; border-bottom: 1px solid #e1e7ef; }
+.header-inner { padding: 22px 0; display: flex; align-items: center; justify-content: space-between; gap: 18px; }
+.brand { font-size: 15px; font-weight: 800; letter-spacing: .045em; }
+.meta { font-size: 12px; color: #64748b; margin-top: 6px; }
+nav { display: flex; flex-wrap: wrap; gap: 8px; }
+nav a { padding: 9px 12px; border-radius: 8px; color: #315fbb; text-decoration: none; font-weight: 600; }
+nav a:hover { background: #edf3ff; }
+.hero { padding: 56px 0 24px; }
+.eyebrow { color: #315fbb; font-size: 12px; font-weight: 800; letter-spacing: .1em; }
+h1 { font-size: clamp(32px, 5vw, 48px); line-height: 1.1; margin: 10px 0 16px; }
+h2 { font-size: 26px; line-height: 1.2; margin: 8px 0 0; }
+.lead { font-size: 17px; color: #64748b; max-width: 850px; }
+.counter { display: inline-block; padding: 8px 14px; margin-top: 8px; border-radius: 8px; background: #eaf0fc; color: #244a95; }
+.card { background: #fff; border: 1px solid #e1e7ef; border-radius: 18px; box-shadow: 0 12px 32px rgba(20, 40, 80, .05); padding: 28px; margin: 22px 0; }
+.section-heading { display: flex; justify-content: space-between; align-items: center; gap: 16px; margin-bottom: 22px; }
+.section-description { color: #64748b; margin: -8px 0 24px; }
+.pill { background: #eef3ff; color: #315fbb; border-radius: 20px; padding: 6px 12px; white-space: nowrap; font-weight: bold; font-size: 13px; }
+.table-scroll { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; margin: 0 auto; }
+th { text-align: left; background: #eff4fb; color: #34445f; font-size: 13px; }
+th, td { padding: 14px 16px; border-bottom: 1px solid #e6ebf2; vertical-align: top; }
+tr:last-child td { border-bottom: none; }
+tr:hover td { background: #fafcff; }
+.number { width: 55px; color: #718096; }
+.term-name { font-weight: bold; width: 22%; color: #264f9f; }
+.gallery { display: grid; grid-template-columns: repeat(5, minmax(0,1fr)); gap: 16px; }
+.image-tile { margin: 0; min-width: 0; border: 1px solid #e2e8f0; padding: 9px; border-radius: 12px; background: #fcfdff; text-align: center; }
+.image-tile img { display: block; width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 8px; background: #eef3fa; }
+.image-tile figcaption { margin-top: 9px; font-size: 13px; font-weight: 700; }
+.term-form { max-width: 780px; }
+.form-row { margin-bottom: 18px; }
+.form-row label { display: block; font-weight: 700; margin-bottom: 7px; }
+input[type="text"], textarea, input[type="file"] { width: 100%; font: inherit; border: 1px solid #cbd5e1; border-radius: 10px; padding: 12px 14px; background: #fff; color: #1f2937; }
+input:focus, textarea:focus { outline: 2px solid #a5bff0; border-color: #315fbb; }
+textarea { resize: vertical; }
+button, .button-link { background: #315fbb; color: #fff; border: none; padding: 12px 19px; border-radius: 10px; font: inherit; font-weight: 700; cursor: pointer; text-decoration: none; display: inline-block; }
+button:hover, .button-link:hover { background: #244a95; }
+.notice { background: #edf8f0; padding: 14px 18px; border: 1px solid #b9dec2; color: #225a35; border-radius: 10px; }
+.error-text { color: #a82a2a; }
+.result-page { min-height: 65vh; padding-top: 36px; }
+.site-footer { margin-top: 52px; background: #1f2937; color: #dce3ef; }
+.footer-inner { min-height: 88px; display: flex; justify-content: space-between; gap: 20px; align-items: center; font-size: 13px; }
+@media (max-width: 900px) { .gallery { grid-template-columns: repeat(3, minmax(0,1fr)); } }
+@media (max-width: 600px) { .header-inner { flex-direction: column; align-items: flex-start; } .gallery { grid-template-columns: repeat(2, minmax(0,1fr)); } .card { padding: 18px; } .section-heading { align-items: flex-start; flex-direction: column; } .footer-inner { padding: 22px 0; flex-direction: column; align-items: flex-start; } }

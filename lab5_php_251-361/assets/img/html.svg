@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="360" viewBox="0 0 360 360" role="img" aria-label="HTML">
+<rect width="360" height="360" rx="32" fill="#f0f4fa"/>
+<rect x="36" y="40" width="288" height="280" rx="26" fill="#ffffff" stroke="#dce4ef" stroke-width="3"/>
+<rect x="66" y="72" width="228" height="18" rx="9" fill="#d9694c" opacity=".24"/>
+<circle cx="78" cy="81" r="6" fill="#d9694c"/><circle cx="99" cy="81" r="6" fill="#d9694c" opacity=".7"/><circle cx="120" cy="81" r="6" fill="#d9694c" opacity=".45"/>
+<rect x="82" y="125" width="196" height="138" rx="23" fill="#d9694c" opacity=".12"/>
+<text x="180" y="219" font-family="Arial, sans-serif" font-size="66" font-weight="800" text-anchor="middle" fill="#d9694c">&lt;/&gt;</text>
+<text x="180" y="296" font-family="Arial,sans-serif" font-size="21" font-weight="700" text-anchor="middle" fill="#334155">HTML</text>
+</svg>
